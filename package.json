@@ -1,6 +1,6 @@
 {
   "name": "kxx-js-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "记录自己平时常用的JS工具函数. 便于后面项目开发使用.",
   "main": "index.js",
   "directories": {
