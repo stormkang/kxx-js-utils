@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { dataType } = require('../index');
+const { dataType, dateFormat } = require('../index');
 
 let name;
 
@@ -46,6 +46,24 @@ describe('工具函数测试集', () => {
       assert.equal(dataType(() => {}), 'Function');
     });
 
+  });
+
+  /*
+   * dateFormat函数测试
+   */
+  describe('#dateFormat', () => {
+
+    it('如果什么参数都不传, 返回格式应该类似于: 2021-03-16(当前日期)', () => {
+      assert.equal(dateFormat().length, 10);
+    });
+    
+    it('如果只传入参数date: 1601510400000, 返回结果应该是: 2020-10-01', () => {
+      assert.equal(dateFormat({date: new Date(1601510400000)}), '2020-10-01');
+    });
+
+    it('如果传入参数date: 1601526859000, withHms: true, 返回结果应该是: 2020-10-01 12:34:19', () => {
+      assert.equal(dateFormat({date: new Date(1601526859000), withHms: true}), '2020-10-01 12:34:19');
+    });
   });
 
 });

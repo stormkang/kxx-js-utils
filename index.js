@@ -9,7 +9,37 @@
  * @param {*} data 要获取对应类型的数据
  * @returns {string} 返回对应数据类型
  */
-exports.dataType = (data) => {
+const dataType = (data) => {
   const typeStr = Object.prototype.toString.call(data);
   return typeStr.substring(8, typeStr.length - 1);
+}
+
+/**
+ * 格式化日期
+ * @param {*} date 传入的日期, 默认当前日期.
+ * @param {boolean} withHms 是否包含时分秒, 默认不包含. 
+ * @returns 
+ */
+const dateFormat = ({date = new Date(), withHms = false} = {}) => {
+  const year = date.getFullYear();
+  const month = ''.padStart.call(date.getMonth() + 1, 2, 0);
+  const day = ''.padStart.call(date.getDate(), 2, 0);
+  const hour = ''.padStart.call(date.getHours(), 2, 0);
+  const minute = ''.padStart.call(date.getMinutes(), 2, 0);
+  const second = ''.padStart.call(date.getSeconds(), 2, 0);
+  
+  let _date = `${year}-${month}-${day}`;
+
+  if (withHms) {
+    return `${_date} ${hour}:${minute}:${second}`;
+  } else {
+    return _date;
+  }
+}
+
+
+
+module.exports = {
+  dataType,
+  dateFormat,
 }

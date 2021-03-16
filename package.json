@@ -1,5 +1,5 @@
 {
-  "name": "kxx-utils",
+  "name": "kxx-js-utils",
   "version": "1.0.0",
   "description": "记录自己平时常用的JS工具函数. 便于后面项目开发使用.",
   "main": "index.js",
@@ -11,6 +11,11 @@
   },
   "keywords": ["JS", "Node", "NPM"],
   "author": "Ryan Kong",
+  "homepage": "https://github.com/stormkang/kxx-uitls#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/stormkang/kxx-uitls.git"
+  },
   "license": "MIT",
   "dependencies": {
     "mocha": "^8.3.2"
