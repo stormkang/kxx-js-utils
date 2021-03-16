@@ -1,0 +1,18 @@
+{
+  "name": "kxx-utils",
+  "version": "1.0.0",
+  "description": "记录自己平时常用的JS工具函数. 便于后面项目开发使用.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["JS", "Node", "NPM"],
+  "author": "Ryan Kong",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^8.3.2"
+  }
+}
