@@ -16,8 +16,8 @@ const dataType = (data) => {
 
 /**
  * 格式化日期
- * @param {*} date 传入的日期, 默认当前日期.
- * @param {boolean} withHms 是否包含时分秒, 默认不包含. 
+ * @param {*} param.date 传入的日期, 默认当前日期.
+ * @param {boolean} param.withHms 是否包含时分秒, 默认不包含. 
  * @returns 
  */
 const dateFormat = ({date = new Date(), withHms = false} = {}) => {
