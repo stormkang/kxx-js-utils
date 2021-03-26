@@ -37,9 +37,19 @@ const dateFormat = ({date = new Date(), withHms = false} = {}) => {
   }
 }
 
+/**
+ * 睡眠(暂停)指定ms时间
+ * @param {number} ms 要睡眠的毫秒数 
+ */
+const sleep = (ms = 0) => {
+  const startTime = new Date().getTime();
+  while (new Date().getTime() < (startTime + ms));
+}
+
 
 
 module.exports = {
   dataType,
   dateFormat,
+  sleep,
 }
