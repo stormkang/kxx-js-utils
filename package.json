@@ -11,10 +11,10 @@
   },
   "keywords": ["JS", "Node", "NPM"],
   "author": "Ryan Kong",
-  "homepage": "https://github.com/stormkang/kxx-uitls#readme",
+  "homepage": "https://github.com/stormkang/kxx-js-utils#readme",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/stormkang/kxx-uitls.git"
+    "url" : "https://github.com/stormkang/kxx-js-utils.git"
   },
   "license": "MIT",
   "dependencies": {
